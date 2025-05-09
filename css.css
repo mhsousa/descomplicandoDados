@@ -244,14 +244,17 @@
             }
         }
 
-        @media (max-width: 480px) {
-            header {
-                padding: 2rem 1rem;
-            }
+           @media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem; /* Reduz o padding */
+    }
 
-            header div {
-                font-size: 1.4rem;
-            }
+    header div {
+        font-size: 1.2rem; /* Reduz o tamanho do texto */
+        line-height: 1.4;  /* Ajusta o espaçamento entre linhas */
+        word-wrap: break-word; /* Garante quebra de linha para textos longos */
+    }
+}
 
             .card {
                 padding: 1rem;
