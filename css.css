@@ -216,13 +216,17 @@
         footer::before {
             content: '✨';
             margin-right: 0.5rem;
-        }.imagecontainer {
-    	display: flex;
-	flex-direction:column;
-	margin:20px;
-	font-size:12px;
-    	justify-content: center;
-    	align-items: center;
-    	text-align: center;
-	}
+        }
+.imagecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Alinha horizontalmente no centro */
+    font-size: 12px;
+    width: 100%; /* Adiciona largura para alinhar ao centro */
+    max-width: 500px; /* Opcional: controla a largura máxima */
+}
+
     </style>
