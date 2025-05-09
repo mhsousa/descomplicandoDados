@@ -12,7 +12,7 @@
             line-height: 1.7;
             min-height: 100vh;
             display: flex;
-            width:100%;
+            width:100vw;
             flex-direction: column;
             overflow-x: hidden;
         }
