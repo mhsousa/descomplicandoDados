@@ -22,15 +22,11 @@
             padding: 3rem 2rem;
             text-align: center;
             width:100%;
-            position: relative;
             overflow: hidden;
         }
 
         header::before {
             content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
@@ -41,7 +37,6 @@
             font-size: 2.2rem;
             font-weight: 700;
             letter-spacing: 1px;
-            position: relative;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
