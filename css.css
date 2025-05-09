@@ -216,9 +216,7 @@
         footer::before {
             content: '✨';
             margin-right: 0.5rem;
-        }
-
-.image-container {
+        }.image-container {
     	display: flex;
 	flex-direction:column;
 	margin:20px;
