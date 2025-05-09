@@ -21,7 +21,7 @@
             background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
             padding: 3rem 2rem;
             text-align: center;
-            width:100vw;
+            max-width:100%;
             overflow: hidden;
         }
 
@@ -42,7 +42,7 @@
 
         .container {
             align-items: center;
-            width:100vw;
+            max-width:100%;
             margin: 3rem auto;
             display: grid;
             gap: 2rem;
@@ -203,7 +203,7 @@
         footer {
             margin-top: 2rem;
             padding: 2rem;
-            width:100vw;
+            max-width:100%;
             text-align: center;
             color: #94a3b8;
             font-size: 0.95rem;
