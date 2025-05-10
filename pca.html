@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Área do Lago</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<header>
+
+    <div style="display: flex; justify-content: center; margin-top: 1rem;">
+        <img src="img/logo/dados.png" width="100" height="100" alt="Logo">
+        <div style="position: relative; top: 20px;">Descomplicando Dados</div>
+    </div>
+</header>
+    <div style="position: relative; display: inline-block; z-index: 100;">
+        <button class="chapter-btn" onclick="toggleDropdown()">🡾</button>
+        <div class="dropdown" id="chapterDropdown">
+            <a href="#chapter1">Capítulo 1 - Método de Monte Carlo</a>
+        </div>
+    </div>
+
+
+<div class="container">
+        <div class="card">
+            <h3>O Método de Monte Carlo</h3>
+            <p>O método de Monte Carlo foi popularizado pelo matemático John von Neumann durante o período da Segunda Guerra Mundial. Neumann, sendo ele um dos principais nomes da Teoria dos Jogos, pouco tempo depois, publicou o livro <em>Teoria dos Jogos e o Comportamento Econômico</em>.</p>
+            <p>O método foi nomeado como uma homenagem ao Cassino Monte Carlo, um complexo de jogos e entretenimento localizado no principado de Mônaco. A escolha do nome buscava destacar a relação do método com a aleatoriedade, refletindo sua natureza probabilística e imprevisível. Essa imprevisibilidade garante a flexibilidade necessária para lidar com elevados graus de incertezas e relações pouco determinísticas.</p>
+        </div>
+        <div class="card">
+            <h4>Exemplo: Cálculo da Área de um Lago</h4>
+            <p>Um exemplo clássico de aplicação do método de Monte Carlo é o cálculo da área de um lago com formato irregular. Suponhamos que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. </p>
+	<div class="imagecontainer">
+		<img src="img/cap1_montecarlo/img1.png" width="400" height="400" alt="Logo">
+	        <figcaption>Exemplo de lago de área irregular.</figcaption>
+	</div>
+            <p>Uma abordagem inicial poderia ser inscrever o lago em uma forma geométrica simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação pode ser muito grosseira. O método de Monte Carlo permite uma estimativa mais precisa.</p>
+        </div>
+        <div class="card">
+            <h4>Representação Geométrica</h4>
+            <p>O primeiro passo consiste em representar o lago em um plano cartesiano, onde cada ponto do lago é descrito por coordenadas <code>(x, y)</code>. Isso facilita a geração de pontos aleatórios e a verificação de quais pontos caem dentro do lago.</p>
+	<div class="imagecontainer">
+		<img src="img/cap1_montecarlo/img2.png" width="400" height="400" alt="Logo">
+	        <figcaption>Ilha circunscrita em círculo.</figcaption>
+	</div>
+        </div>
+        <div class="card">
+            <h4>Gerando Números Aleatórios</h4>
+            <p>Para aplicar o método, geramos pontos aleatórios dentro do círculo que circunscreve o lago. Em Python, podemos usar a biblioteca <code>random</code> para simular esses pontos e verificar quantos caem dentro do lago.</p>
+            <div class="imagecontainer">
+		<img src="img/cap1_montecarlo/img3.png" width="400" height="400" alt="Logo">
+	        <figcaption>Em vermelho estão os pontos aleatoriamente definidos.</figcaption>
+		</div>
+
+        </div>
+        <div class="card">
+            <h4>Cálculo da Área do Lago utilizando Monte Carlo</h4>
+            <p>A fórmula para calcular a área do lago circunscrito em um círculo, utilizando o método de Monte Carlo, é:</p>
+            <p>
+                <code>Área do Lago (A_lago) ≈ Área do Círculo (A_circulo) × (N_dentro / N_total)</code>
+            </p>
+            <p>Onde:</p>
+            <ul>
+                <li><code>A_circulo</code>: Área do círculo que circunscreve o lago.</li>
+                <li><code>N_dentro</code>: Número de pontos aleatórios que caem dentro do lago.</li>
+                <li><code>N_total</code>: Número total de pontos aleatórios gerados dentro do retângulo.</li>
+            </ul>
+	    	<p>Supondo que o raio do círculo no qual a ilha está circunscrita seja de 4.7km, ou qual 4700 metros, temos que a área é dada por <code>f(R)=πR²</code>, temos <code>f(R)=3,14*4,7²</code> de forma que a área do círculo é equivalente a  69,36Km²</p>
+		<p>Substituindo na fórmula <code>Área do Lago (A_lago) ≈ 69,36 × (574 / 1000)</code></p>
+		<p>De forma que a área estimada para a ilha é <code>39,81km²</code></p>
+        </div>
+	        <!-- Quiz Section -->
+        <div class="card">
+            <h4>Teste seus conhecimentos</h4>
+            <form id="quizForm">
+                <div>
+                    <p style="text-indent:0em;">1. Quem popularizou o Método de Monte Carlo?</p>
+                    <label><input type="radio" name="q1" value="a"> Albert Einstein</label><br>
+                    <label><input type="radio" name="q1" value="b"> John von Neumann</label><br>
+                    <label><input type="radio" name="q1" value="c"> Blaise Pascal</label><br>
+                    <label><input type="radio" name="q1" value="d"> Alan Turing</label>
+                </div>
+                <div>
+                    <p style="text-indent:0em;">2. Qual é a fórmula usada para calcular a área de um círculo?</p>
+                    <label><input type="radio" name="q2" value="a"> πR</label><br>
+                    <label><input type="radio" name="q2" value="b"> 2πR</label><br>
+                    <label><input type="radio" name="q2" value="c"> πR²</label><br>
+                    <label><input type="radio" name="q2" value="d"> R²/π</label>
+                </div>
+                <div>
+                    <p style="text-indent:0em;">3. Qual é a área estimada do lago no exemplo?</p>
+                    <label><input type="radio" name="q3" value="a"> 69,36km²</label><br>
+                    <label><input type="radio" name="q3" value="b"> 39,81km²</label><br>
+                    <label><input type="radio" name="q3" value="c"> 57,40km²</label><br>
+                    <label><input type="radio" name="q3" value="d"> 47,00km²</label>
+                </div>
+                <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+            </form>
+            <p id="quizResult"></p>
+        </div>
+<div class="card">
+     
+	<div>
+	<p>Se quiser entender melhor como o método funciona aqui está o link para o repositório com o <a href="https://github.com/mhsousa/monteCarlo/tree/main"> código</a></p>
+	</div>
+        
+</div>
+    </div>
+    <footer>
+       Economia e Dados ao alcance de todos.
+<div><a href="https://www.linkedin.com/in/mariohenrique97/">Siga o autor</a></div>
+    </footer>
+</body>
+    <script>
+       function toggleDropdown() {
+    const dropdown = document.getElementById('chapterDropdown');
+    dropdown.classList.toggle('active');
+}
+
+// Fechar o dropdown ao clicar fora
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('chapterDropdown');
+    const button = document.querySelector('.chapter-btn');
+    if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
+ // Função para verificar respostas do quiz
+    function checkAnswers() {
+        const answers = {
+            q1: 'b',
+            q2: 'c',
+            q3: 'b'
+        };
+
+        let score = 0;
+
+        for (let question in answers) {
+            const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            if (userAnswer && userAnswer.value === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
+    }
+    </script>
+</html>
