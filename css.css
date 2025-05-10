@@ -220,6 +220,9 @@
               border-radius:18px;
               
        }
+.container p {
+    text-indent: 2em;
+}
 .imagecontainer {
     display: flex;
     flex-direction: column;
