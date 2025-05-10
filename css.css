@@ -88,7 +88,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    width: 200px;
+    width: 450px;
     display: none; /* Padrão: escondido */
     flex-direction: column;
     z-index: 1000; /* Garante que fique acima dos outros elementos */
