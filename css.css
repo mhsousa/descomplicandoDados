@@ -223,9 +223,6 @@
 .container p {
     text-indent: 3.5em;
 }
-input{
-       text-indent: 3.5em;
-}
 .imagecontainer {
     display: flex;
     flex-direction: column;
