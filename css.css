@@ -216,6 +216,10 @@
             content: '✨';
             margin-right: 0.5rem;
         }
+img{
+       border-radius:18px;
+       
+}
 .imagecontainer {
     display: flex;
     flex-direction: column;
