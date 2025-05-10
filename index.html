@@ -78,6 +78,35 @@
 	</div>
         
         </div>
+	        <!-- Quiz Section -->
+        <div class="card">
+            <h4>Teste seus conhecimentos</h4>
+            <form id="quizForm">
+                <div>
+                    <p>1. Quem popularizou o Método de Monte Carlo?</p>
+                    <label><input type="radio" name="q1" value="a"> Albert Einstein</label><br>
+                    <label><input type="radio" name="q1" value="b"> John von Neumann</label><br>
+                    <label><input type="radio" name="q1" value="c"> Blaise Pascal</label><br>
+                    <label><input type="radio" name="q1" value="d"> Alan Turing</label>
+                </div>
+                <div>
+                    <p>2. Qual é a fórmula usada para calcular a área de um círculo?</p>
+                    <label><input type="radio" name="q2" value="a"> πR</label><br>
+                    <label><input type="radio" name="q2" value="b"> 2πR</label><br>
+                    <label><input type="radio" name="q2" value="c"> πR²</label><br>
+                    <label><input type="radio" name="q2" value="d"> R²/π</label>
+                </div>
+                <div>
+                    <p>3. Qual é a área estimada do lago no exemplo?</p>
+                    <label><input type="radio" name="q3" value="a"> 69,36km²</label><br>
+                    <label><input type="radio" name="q3" value="b"> 39,81km²</label><br>
+                    <label><input type="radio" name="q3" value="c"> 57,40km²</label><br>
+                    <label><input type="radio" name="q3" value="d"> 47,00km²</label>
+                </div>
+                <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+            </form>
+            <p id="quizResult"></p>
+        </div>
     </div>
     <footer>
        Economia e Dados ao alcance de todos.
@@ -98,6 +127,24 @@ document.addEventListener('click', function(event) {
         dropdown.classList.remove('active');
     }
 });
+ // Função para verificar respostas do quiz
+    function checkAnswers() {
+        const answers = {
+            q1: 'b',
+            q2: 'c',
+            q3: 'b'
+        };
 
+        let score = 0;
+
+        for (let question in answers) {
+            const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            if (userAnswer && userAnswer.value === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
+    }
     </script>
 </html>
