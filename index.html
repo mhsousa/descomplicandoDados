@@ -35,16 +35,16 @@
         </div>
         <div class="card">
             <h4>Exemplo: Cálculo da Área de um Lago</h4>
-            <p>Um exemplo clássico de aplicação do método de Monte Carlo é o cálculo da área de um lago com formato irregular. Suponhamos que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. </p>
+            <p>Um exemplo clássico de aplicação do método de Monte Carlo consiste na estimativa da área de um lago com formato irregular. Suponha que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. E, com o auxílio do método de Monte Carlo, isso é tudo que você precisa.</p>
 	<div class="imagecontainer">
 		<img src="img/cap1_montecarlo/img1.png" width="400" height="400" alt="Logo">
 	        <figcaption>Exemplo de lago de área irregular.</figcaption>
 	</div>
-            <p>Uma abordagem inicial poderia ser inscrever o lago em uma forma geométrica simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação pode ser muito grosseira. O método de Monte Carlo permite uma estimativa mais precisa.</p>
+            <p>Precisamos definir uma abordagem inicial para solucionar esse problema, o primeiro passo poderia ser a inscrição do lago em uma forma geométrica mais simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação ainda pode resultar em uma estimativa muito grosseira. Para conseguirmos uma aproximação mais precisa, devemos definir qual o percentual da área do Lago em relação à àrea do círculo.</p>
         </div>
         <div class="card">
             <h4>Representação Geométrica</h4>
-            <p>O primeiro passo consiste em representar o lago em um plano cartesiano, onde cada ponto do lago é descrito por coordenadas <code>(x, y)</code>. Isso facilita a geração de pontos aleatórios e a verificação de quais pontos caem dentro do lago.</p>
+            <p>O primeiro passo para calcular a área do lago utilizando o método de Monte Carlo consiste na representação do lago em um plano cartesiano, onde cada ponto do lago vai ser descrito por um par de coordenadas <code>(x, y)</code>. Essa abordagem visa facilitar a geração de pontos aleatórios para, posteriormente, verificar o percentual dos pontos aleatóriamente definiram percentem ao perimetro da representação do lago.</p>
 	<div class="imagecontainer">
 		<img src="img/cap1_montecarlo/img2.png" width="400" height="400" alt="Logo">
 	        <figcaption>Ilha circunscrita em círculo.</figcaption>
@@ -52,7 +52,7 @@
         </div>
         <div class="card">
             <h4>Gerando Números Aleatórios</h4>
-            <p>Para aplicar o método, geramos pontos aleatórios dentro do círculo que circunscreve o lago. Em Python, podemos usar a biblioteca <code>random</code> para simular esses pontos e verificar quantos caem dentro do lago.</p>
+            <p>Para aplicar o método, geramos 1000 pares de coordenadas aleatórias distribuídas estocatiscamente dentro do círculo que circunscreve a área do lago. Em Python, podemos usar a biblioteca <code>random</code> para simular os esses pontos e verificar o percentual dessa distribuição caíram dentro do lago.</p>
             <div class="imagecontainer">
 		<img src="img/cap1_montecarlo/img3.png" width="400" height="400" alt="Logo">
 	        <figcaption>Em vermelho estão os pontos aleatoriamente definidos.</figcaption>
@@ -61,7 +61,7 @@
         </div>
         <div class="card">
             <h4>Cálculo da Área do Lago utilizando Monte Carlo</h4>
-            <p>A fórmula para calcular a área do lago circunscrito em um círculo, utilizando o método de Monte Carlo, é:</p>
+            <p>Uma vez que os pontos foram gerados, podemos prosseguir com o cálculo, A fórmula para estimar a área do lago circunscrito em um círculo, utilizando o método de Monte Carlo, é:</p>
             <p>
                 <code>Área do Lago (A_lago) ≈ Área do Círculo (A_circulo) × (N_dentro / N_total)</code>
             </p>
