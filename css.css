@@ -236,7 +236,7 @@
     max-width: 500px; /* Opcional: controla a largura máxima */
 }
        .journalist-card {
-            display: flex;
+            display: grid;
             align-items: center;
             background-color: #fff;
             padding: 10px;
