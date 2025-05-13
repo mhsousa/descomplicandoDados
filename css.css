@@ -234,7 +234,8 @@
     font-size: 12px;
     width: 100vw; /* Adiciona largura para alinhar ao centro */
     max-width: 500px; /* Opcional: controla a largura máxima */
-}.journalist-card {
+}
+       .journalist-card {
             display: flex;
             align-items: center;
             background-color: #fff;
