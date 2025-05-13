@@ -235,20 +235,12 @@
     font-size: 12px;
     width: 100vw; /* Adiciona largura para alinhar ao centro */
     max-width: 500px; /* Opcional: controla a largura máxima */
-}
-       .journalist-card {
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
+
         }
          #header {
             background-color: #333;
             color: white;
-            display: flex;
+            display: grid;
             justify-content: space-between;
             align-items: start;
         }
