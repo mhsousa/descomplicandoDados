@@ -278,8 +278,8 @@
         /* Spinner */
         .spinner {
             position:relative;
-            top:40%;
-            left:50%;
+            top:40vh;
+            left:50vw;
             width: 50px;
             height: 50px;
             border: 5px solid #f3f3f3;
