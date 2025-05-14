@@ -112,7 +112,7 @@ $(document).ready(function(){
                     <label><input type="radio" name="q3" value="d"> 47,00km²</label>
                 </div>
 		<br>
-                <button id="sendbutton" type="button" onclick="checkAnswers()">Verificar Respostas</button>
+                <button class="sendbutton" type="button" onclick="checkAnswers()">Verificar Respostas</button>
             </form>
             <p id="quizResult"></p>
         </div>
@@ -245,7 +245,7 @@ function generateCertificate() {
         	button.textContent = 'Baixar Certificado'; 
         	button.id = 'meuBotao'; 
 		button.onclick=generateCertificate
-		button.className="chapter-btn"
+		button.className="sendbutton"
 		container.appendChild(button);
 	    }
 	else{
