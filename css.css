@@ -324,4 +324,14 @@
       border-color: white;
       transform: scale(1.1);
     }
+@media (max-width: 768px) {
+ .container {
+            position:relative;
+            left:7%;
+            align-items: center;
+            margin: 3rem auto;
+            display: grid;
+            gap: 2rem;
+        }
+}
     </style>
