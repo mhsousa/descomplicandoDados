@@ -350,9 +350,7 @@
 .prettyInput{
     width: 100%;
     max-width: 400px; /* Largura máxima */
-    padding: 10px 15px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho da fonte */
-    border: 2px solid #ddd; /* Borda inicial */
     border-radius: 8px; /* Cantos arredondados */
     outline: none; /* Remove o contorno padrão */
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animações */
