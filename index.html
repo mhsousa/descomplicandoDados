@@ -87,7 +87,7 @@ $(document).ready(function(){
             <h4>Teste seus conhecimentos</h4>
             <div class="input-container">
 		    	<label for="name">Insira seu nome:</label>
-		    	<input  type="text" id="name" name="name" />
+		    	<input  class="prettyInput" type="text" id="name" name="name" />
 		    </div>
 		<form id="quizForm">
                 <div>
@@ -133,7 +133,7 @@ $(document).ready(function(){
 	    <input type="email" name="email" required>
 	  </label>
 	  <!-- Campo Honeypot -->
-	  <input type="text" name="_gotcha" style="display:none;">
+	  <input class="prettyInput" type="text" name="_gotcha" style="display:none;">
 	  <button type="submit" id="envio" onclick="sendmail()" >Enviar</button>
 	</form>
 	<p id="sendMail"></p>
