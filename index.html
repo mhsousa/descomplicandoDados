@@ -164,8 +164,7 @@ document.addEventListener('click', function(event) {
         }
 
         document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
-    }
-	    if(score==3){
+	if(score==3){
 		 const container = document.getElementById('quizForm');
 		const button = document.createElement('button');
         	button.textContent = 'Baixar Certificado'; 
@@ -173,6 +172,7 @@ document.addEventListener('click', function(event) {
 		container.appendChild(button);
 	    }
 
+    }
 
     </script>
 </html>
