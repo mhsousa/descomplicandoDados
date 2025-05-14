@@ -44,7 +44,7 @@ $(document).ready(function(){
             <h4>Exemplo: Cálculo da Área de um Lago</h4>
             <p>Um exemplo clássico de aplicação do método de Monte Carlo consiste na estimativa da área de um lago com formato irregular. Suponha que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. E, com o auxílio do método de Monte Carlo, isso é tudo que você precisa.</p>
 	<div class="imagecontainer">
-		<img src="img/cap1_montecarlo/img1.png" alt="Logo" width=400 height= 400 style="max-width:70vw; max-height:70vw">
+		<img src="img/cap1_montecarlo/img1.png" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Exemplo de lago de área irregular.</figcaption>
 	</div>
             <p>Precisamos definir uma abordagem inicial para solucionar esse problema, o primeiro passo poderia ser a inscrição do lago em uma forma geométrica mais simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação ainda pode resultar em uma estimativa muito grosseira. Para conseguirmos uma aproximação mais precisa, devemos definir qual o percentual da área do Lago em relação à àrea do círculo.</p>
@@ -53,7 +53,7 @@ $(document).ready(function(){
             <h4>Representação Geométrica</h4>
             <p>O primeiro passo para calcular a área do lago utilizando o método de Monte Carlo consiste na representação do lago em um plano cartesiano, onde cada ponto do lago vai ser descrito por um par de coordenadas <code>(x, y)</code>. Essa abordagem visa facilitar a geração de pontos aleatórios para, posteriormente, verificar o percentual dos pontos aleatóriamente definiram percentem ao perimetro da representação do lago.</p>
 	<div class="imagecontainer">
-		<img src="img/cap1_montecarlo/img2.png" alt="Logo" width=400 height= 400 style="max-width:70vw; max-height:70vw">
+		<img src="img/cap1_montecarlo/img2.png" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Ilha circunscrita em círculo.</figcaption>
 	</div>
         </div>
@@ -61,7 +61,7 @@ $(document).ready(function(){
             <h4>Gerando Números Aleatórios</h4>
             <p>Para aplicar o método, geramos 1000 pares de coordenadas aleatórias distribuídas estocatiscamente dentro do círculo que circunscreve a área do lago. Em Python, podemos usar a biblioteca <code>random</code> para simular os esses pontos e verificar o percentual dessa distribuição caíram dentro do lago.</p>
             <div class="imagecontainer">
-		<img src="img/cap1_montecarlo/img3.png" alt="Logo" width=400 height= 400 style="max-width:70vw; max-height:70vw">
+		<img src="img/cap1_montecarlo/img3.png" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Em vermelho estão os pontos aleatoriamente definidos.</figcaption>
 		</div>
 
