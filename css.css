@@ -48,14 +48,13 @@
 
         .container {
             align-items: center;
-            margin: 3rem auto;
             display: grid;
             gap: 2rem;
         }
 
         .card {
             background: rgba(255, 255, 255, 0.05);
-            width:95vw;
+            max-width:75vw;
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding:18px;
