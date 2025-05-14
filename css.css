@@ -21,6 +21,7 @@
             position:relative:
             top:-25px;
             padding: 0.8rem;
+            width:95vw;
             text-align: center;
             overflow: hidden;
         }
@@ -50,7 +51,7 @@
 
         .card {
             background: rgba(255, 255, 255, 0.05);
-            width:95%;
+            width:95vw;
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding:18px;
@@ -205,6 +206,7 @@
        footer {
             margin-top: 2rem;
             padding: 2rem;
+            width:95vw;
             text-align: center;
             color: #94a3b8;
             font-size: 0.95rem;
