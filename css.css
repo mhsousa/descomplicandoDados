@@ -33,6 +33,7 @@
             opacity: 0.3;
         }
 
+
         header div {
             font-size: 2.2rem;
             font-weight: 470;
@@ -58,7 +59,7 @@
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
         .chapter-btn {
-            background: linear-gradient(135deg, #1a1a2e 0%, #090201 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #090201 150%);
             color: #e2e8f0;
             font-family: 'Poppins', sans-serif;
             font-size: 1rem;
@@ -77,6 +78,7 @@
         .chapter-btn:hover {
             background: #7c3aed;
             transform: translateY(-50%) scale(1.05);
+            width:120px;
         }
 
 .dropdown {
