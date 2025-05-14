@@ -104,6 +104,8 @@
 
 .dropdown.active {
     display: flex; /* Torna visível quando ativado */
+    position:relative;
+    left:2.5%;
 }
 
 
