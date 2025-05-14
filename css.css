@@ -79,7 +79,8 @@
         .chapter-btn:hover {
             background: #7c3aed;
             transform: translateY(-50%) scale(1.05);
-            width:120px;
+            width:140px;
+            transition: width 1s ease; 
         }
 
 .dropdown {
