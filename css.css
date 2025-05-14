@@ -333,4 +333,9 @@
             gap: 2rem;
         }
 }
+.infoimg{
+       max-width:50vw;
+       max-height:25vh;
+}
+
     </style>
