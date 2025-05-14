@@ -232,15 +232,23 @@ function generateCertificate() {
             }
         }
 
-        document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
-	if(score==3){
-		 const container = document.getElementById('quizForm');
+        if(document.getElementById("name").value==""){
+	
+	document.getElementById('quizResult').textContent = `Preencha seu nome antes de continuar!`;
+	
+	}
+	else if(score==3){
+		document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
+		const container = document.getElementById('quizForm');
 		const button = document.createElement('button');
         	button.textContent = 'Baixar Certificado'; 
         	button.id = 'meuBotao'; 
 		button.onclick=generateCertificate
 		container.appendChild(button);
 	    }
+	else{
+		document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
+	}
 
     }
         
