@@ -90,7 +90,7 @@
 .dropdown {
     position: absolute;
     top: calc(100% + 10px); /* Posicione logo abaixo do botão */
-    left: 0; /* Alinha à esquerda do botão */
+    left: 2.5%; 
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -104,8 +104,6 @@
 
 .dropdown.active {
     display: flex; /* Torna visível quando ativado */
-    position:relative;
-    left:2.5%;
 }
 
 
