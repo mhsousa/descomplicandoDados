@@ -18,7 +18,10 @@
         }
 
         header {
-            background: linear-gradient(90deg, #090201 -25%, #4f46e5 75%, #090201 115%);
+            background-image: url('img\logo\header_gif.gif');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;             
             position:relative:
             top:-25px;
             padding: 1.2rem;
