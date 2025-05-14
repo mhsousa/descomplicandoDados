@@ -165,6 +165,13 @@ document.addEventListener('click', function(event) {
 
         document.getElementById('quizResult').textContent = `Você acertou ${score} de 3 perguntas.`;
     }
+	    if(score==3){
+		 const container = document.getElementById('quizForm');
+		const button = document.createElement('button');
+        	button.textContent = 'Baixar Certificado'; 
+        	button.id = 'meuBotao'; 
+		container.appendChild(button);
+	    }
 
 
     </script>
