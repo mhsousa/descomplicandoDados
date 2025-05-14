@@ -306,7 +306,7 @@
                 transform: rotate(360deg);
             }
         }
-    #sendbutton {
+    .sendbutton {
       background: rgba(0, 0, 0, 0.4);
       color: white;
       font-size: 18px;
