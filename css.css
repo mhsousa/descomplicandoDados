@@ -40,8 +40,6 @@
 
         .container {
             align-items: center;
-            max-width:95%;
-            min-width:95%;
             margin: 3rem auto;
             display: grid;
             gap: 2rem;
