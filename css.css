@@ -335,7 +335,7 @@
 }
 .infoimg{
        max-width:50vw;
-       max-height:25vh;
+       height: auto; 
 }
 
     </style>
