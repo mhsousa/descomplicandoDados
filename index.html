@@ -123,7 +123,7 @@ $(document).ready(function(){
 	</div>
         
 </div>
-<div class="card">
+<div class="card" style="align-items:center;">
 		<form
 	  action="https://formspree.io/f/mvgadkvl"
 	  method="POST"
@@ -133,8 +133,10 @@ $(document).ready(function(){
 	    <input type="email" name="email" class="prettyInput" required>
 	  </label>
 	  <!-- Campo Honeypot -->
-	  <input class="prettyInput" type="text" name="_gotcha" style="display:none;">
-	  <button class="sendbutton" type="submit" id="envio" onclick="sendmail()" >Enviar</button>
+		<div>
+	 	  <button class="sendbutton" type="submit" id="envio" onclick="sendmail()" >Enviar</button>
+		  <input class="prettyInput" type="text" name="_gotcha" style="display:none;">
+		</div>
 	</form>
 	<p id="sendMail"></p>
 	
