@@ -129,14 +129,14 @@ $(document).ready(function(){
 	  method="POST"
 	>
 	  <label>
-	    Deseja receber notificação de quando publicarmos mais conteúdo, deixe aqui abaixo o seu email:
+	    Deseja receber notificação de quando publicarmos mais conteúdo? deixe seu email para que possamos informá-lo:
 	    <input type="email" name="email" required>
 	  </label>
 	  <!-- Campo Honeypot -->
 	  <input type="text" name="_gotcha" style="display:none;">
-	  <button type="submit">Enviar</button>
+	  <button type="submit" id="envio" onclick="sendmail()" >Enviar</button>
 	</form>
-
+	<p id="sendMail"></p>
 	
 </div>
     </div>
@@ -269,6 +269,9 @@ function generateCertificate() {
 	}
 
     }
-        
+    function sendmail(){
+	    document.getElementById('sendMail').textContent = `Seu email foi cadastrado com sucesso!`;
+
+    }
     </script>
 </html>
