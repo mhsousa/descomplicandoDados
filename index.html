@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descomplicando Dados</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <link rel="stylesheet" href="css.css">
 	
 <div id="loading-spinner">
@@ -146,7 +147,72 @@ document.addEventListener('click', function(event) {
         dropdown.classList.remove('active');
     }
 });
- // Função para verificar respostas do quiz
+function generateCertificate() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Configurações do certificado
+            doc.setFillColor(255, 255, 255);
+            doc.rect(0, 0, 210, 297, 'F'); // Fundo branco
+
+            // Bordas decorativas
+            doc.setLineWidth(1);
+            doc.setDrawColor(0, 102, 204);
+            doc.rect(10, 10, 190, 277); // Borda azul externa
+            doc.setDrawColor(255, 215, 0);
+            doc.rect(15, 15, 180, 267); // Borda dourada interna
+
+            // Título
+            doc.setFont("Helvetica", "bold");
+            doc.setFontSize(28);
+            doc.setTextColor(0, 51, 102);
+            doc.text("Certificado de Conclusão", 105, 50, { align: "center" });
+
+            // Linha decorativa
+            doc.setLineWidth(0.5);
+            doc.setDrawColor(0, 102, 204);
+            doc.line(50, 60, 160, 60);
+
+            // Texto principal
+            doc.setFontSize(16);
+            doc.setFont("Helvetica", "normal");
+            doc.setTextColor(0, 0, 0);
+            doc.text("Este certificado é concedido a", 105, 90, { align: "center" });
+
+            // Nome do destinatário
+            doc.setFont("Helvetica", "bold");
+            doc.setFontSize(22);
+            doc.setTextColor(0, 51, 102);
+            doc.text("João Silva", 105, 110, { align: "center" });
+
+            // Descrição
+            doc.setFont("Helvetica", "normal");
+            doc.setFontSize(14);
+            doc.setTextColor(0, 0, 0);
+            doc.text("pela conclusão com êxito do curso", 105, 130, { align: "center" });
+            doc.setFont("Helvetica", "bold");
+            doc.text("Desenvolvimento Web Avançado", 105, 145, { align: "center" });
+            doc.setFont("Helvetica", "normal");
+            doc.text("com carga horária de 120 horas.", 105, 160, { align: "center" });
+
+            // Data
+            doc.setFontSize(12);
+            doc.text("Emitido em: 14 de Maio de 2025", 105, 180, { align: "center" });
+
+            // Assinatura
+            doc.setLineWidth(0.3);
+            doc.line(60, 220, 100, 220); // Linha para assinatura
+            doc.text("______________________", 80, 225, { align: "center" });
+            doc.text("Coordenador do Curso", 80, 235, { align: "center" });
+
+            // Rodapé
+            doc.setFontSize(10);
+            doc.setTextColor(100, 100, 100);
+            doc.text("Instituto de Educação Online", 105, 270, { align: "center" });
+
+            // Baixar o PDF
+            doc.save("Certificado_Conclusao.pdf");
+        }
     function checkAnswers() {
         const answers = {
             q1: 'b',
@@ -169,10 +235,11 @@ document.addEventListener('click', function(event) {
 		const button = document.createElement('button');
         	button.textContent = 'Baixar Certificado'; 
         	button.id = 'meuBotao'; 
+		button.onclick=generateCertificate()
 		container.appendChild(button);
 	    }
 
     }
-
+        
     </script>
 </html>
