@@ -22,9 +22,9 @@ v<!DOCTYPE html>
         function hideSpinner() {
                 $('#loading-spinner').fadeOut();
             }
+showSpinner();
 $(document).ready(function(){
 	setTimeout(function(){
-		showSpinner();
 		$("#header").load("header.html");
 		setTimeout(() => {console.log("Após 2 segundos");}, 20);
 		hideSpinner()
