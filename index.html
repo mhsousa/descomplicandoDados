@@ -268,5 +268,20 @@ function generateCertificate() {
 	    document.getElementById('sendMail').textContent = `Seu email foi cadastrado com sucesso!`;
 
     }
+    document.addEventListener('DOMContentLoaded', () => {
+      const text = "sudo apt-get install artificial-intelligence-tools";
+      const typedTextElement = document.querySelector('.typed-text');
+      let i = 0;
+
+      function typeEffect() {
+        if (i < text.length) {
+          typedTextElement.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeEffect, 100); // Velocidade de digitação
+        }
+      }
+
+      typeEffect();
+    });
     </script>
 </html>
