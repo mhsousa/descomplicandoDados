@@ -382,9 +382,9 @@
   50% { border-color: orange; }
 @keyframes swing {
       0% { transform: rotate(0deg); }
-      25% { transform: rotate(5deg); }
+      25% { transform: rotate(35deg); }
       50% { transform: rotate(0deg); }
-      75% { transform: rotate(-5deg); }
+      75% { transform: rotate(-35deg); }
       100% { transform: rotate(0deg); }
     }
 
