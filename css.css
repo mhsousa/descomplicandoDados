@@ -13,9 +13,9 @@
             font-style: normal;
             background: #090201;
             color: #e2e8f0;
-            align-items: center;
-            display: flex;
-            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            
         }
        a{
               color:#fcae11;
