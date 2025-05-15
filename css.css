@@ -368,5 +368,65 @@
             color: rgba(255, 255, 255, 0.85);
             font-weight: normal;
         }
+               .header_ {
+            background-color: #1a1a1a;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
 
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #333;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            padding-right: 35px;
+            font-size: 0.9rem;
+            width: 200px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .search-input:focus {
+            outline: none;
+            width: 300px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
     </style>
