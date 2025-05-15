@@ -63,63 +63,6 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
-        .chapter-btn {
-            background: linear-gradient(135deg, #1a1a2e 0%, #090201 150%);
-            color: #e2e8f0;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.3s ease;
-            position: absolute;
-            left: 5%;
-            top: 80%;
-            transform: translateY(-50%);
-        }
-
-        .chapter-btn:hover {
-            background: #7c3aed;
-            transform: translateY(-50%) scale(1.05);
-            width:150px;
-            transition: width 3s ease; 
-        }
-
-.dropdown {
-    position: absolute;
-    top: calc(100% + 10px); /* Posicione logo abaixo do botão */
-    left: 0px; 
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    width: 450px;
-    display: none; /* Padrão: escondido */
-    flex-direction: column;
-    z-index: 1000; /* Garante que fique acima dos outros elementos */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Destaque com sombra */
-}
-
-.dropdown.active {
-    display: flex; /* Torna visível quando ativado */
-}
-
-
-        .dropdown a {
-            color: #cbd5e1;
-            text-decoration: none;
-            padding: 0.8rem 1rem;
-            font-size: 1rem;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        .dropdown a:hover {
-            background: rgba(79, 70, 229, 0.3);
-            color: #4f46e5;
-        }
-
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(79, 70, 229, 0.3);
