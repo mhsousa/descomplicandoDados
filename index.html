@@ -31,20 +31,27 @@ $(document).ready(function(){
 		setTimeout(() => {console.log("Após 2 segundos");}, 20);
 		hideSpinner()},2000)})
  document.addEventListener('DOMContentLoaded', () => {
-      const text = "sudo apt-get install artificial-intelligence-tools";
-      const typedTextElement = document.querySelector('.typed-text');
-      let i = 0;
+    const text = "sudo apt-get install artificial-intelligence-tools";
+    const typedTextElement = document.querySelector('.typed-text');
 
-      function typeEffect() {
-        if (i < text.length) {
-          typedTextElement.textContent += text.charAt(i);
-          i++;
-          setTimeout(typeEffect, 100); // Velocidade de digitação
-        }
+    if (!typedTextElement) {
+      console.error("Elemento com a classe '.typed-text' não foi encontrado.");
+      return;
+    }
+
+    let i = 0;
+
+    function typeEffect() {
+      if (i < text.length) {
+        typedTextElement.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100); // Velocidade de digitação
       }
+    }
 
-      typeEffect();
-    });
+    typeEffect();
+  });
+</script>
 </script>
 <body>
 <div class="container">
