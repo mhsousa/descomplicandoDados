@@ -246,6 +246,7 @@
             background-color: #333;
             position:relative;
             left:3vw;
+            top:-5px;
             color: white;
             display: grid;
             justify-content: space-between;
@@ -256,6 +257,9 @@
             font-weight: bold;
         }
         #header-nav {
+            position:relative;
+            top:-5px;
+            height:15px;
             display: flex;
             gap: 1rem;
         }
