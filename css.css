@@ -342,34 +342,5 @@
         background-color: #333;
     }
 
-    .search-box {
-        position: relative;
-    }
 
-    .search-input {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 20px;
-        padding: 8px 15px;
-        padding-right: 35px;
-        font-size: 0.9rem;
-        width: 200px;
-        transition: width 0.3s ease-in-out;
-    }
-
-    .search-input:focus {
-        outline: none;
-        width: 300px;
-    }
-
-    .search-icon {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #fff;
-        font-size: 1.2rem;
-        pointer-events: none;
-    }
     </style>
