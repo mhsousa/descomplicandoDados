@@ -380,4 +380,44 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+    .terminal {
+      background: #1d1f21;
+      border-radius: 8px;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+    }
+
+    .prompt {
+      margin-right: 10px;
+      color: #0f0;
+    }
+
+    .typed-text {
+      color: #f0f0f0;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid transparent;
+    }
+
+    .cursor {
+      display: inline-block;
+      background: #0f0;
+      width: 10px;
+      height: 1rem;
+      margin-left: 2px;
+      animation: blink 0.5s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        background: transparent;
+      }
+    }
     </style>
