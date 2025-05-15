@@ -16,7 +16,9 @@
             flex-direction: column;
             overflow-x: hidden;
         }
-
+       a{
+              color:#fcae11;
+       }
         header {
             background: #090201;           
             position:relative;
