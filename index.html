@@ -29,30 +29,28 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$("#header").load("header.html");
 		setTimeout(() => {console.log("Após 2 segundos");}, 20);
-		hideSpinner()
-	},2000)
-})
+		hideSpinner()},2000)})
 </script>
 <body>
 <div class="container">
         <div class="card">
-            <h3>O Método de Monte Carlo</h3>
-            <p>O método de Monte Carlo foi popularizado pelo matemático John von Neumann durante o período da Segunda Guerra Mundial. Neumann foi um dos principais nomes da Teoria dos Jogos, pouco tempo depois, publicou o livro <em>Teoria dos Jogos e o Comportamento Econômico</em>, livro no qual ele pôde se aprofundar no tocante a incerteza inerente às decisões dos agentes.</p>
-            <p>O método surgiu em Los Alamos, no âmbito do Projeto Manhattan e foi desenvolvido com o intuito de simular processos estocásticos, tendo sido utilizado por Neumann para simular o comportamento das partículas em diferentes materiais, permitindo verificar a viabilidade das reações atômicas, o nome do método foi  uma homenagem ao Cassino Monte Carlo, um complexo de jogos e entretenimento localizado no principado de Mônaco. A escolha do nome buscava evidenciar a estrita relação do método com a aleatoriedade e sua natureza altamente probabilística e imprevisível. Essa imprevisibilidade, entretanto, permite que o método seja suficientemente flexível para lidar com elevados graus de incertezas e relações pouco determinísticas.</p>
-        </div>
-        <div class="card">
-            <h4>Exemplo: Cálculo da Área de um Lago</h4>
-            <p>Um exemplo clássico de aplicação do método de Monte Carlo consiste na estimativa da área de um lago com formato irregular. Suponha que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. E, com o auxílio do método de Monte Carlo, isso é tudo que você precisa.</p>
-	<div class="imagecontainer">
+            	<h3>O Método de Monte Carlo</h3>
+            	<p>O método de Monte Carlo foi popularizado pelo matemático John von Neumann durante o período da Segunda Guerra Mundial. Neumann foi um dos principais nomes da Teoria dos Jogos, pouco tempo depois, publicou o livro <em>Teoria dos Jogos e o Comportamento Econômico</em>, livro no qual ele pôde se aprofundar no tocante a incerteza inerente às decisões dos agentes.</p>
+            	<p>O método surgiu em Los Alamos, no âmbito do Projeto Manhattan e foi desenvolvido com o intuito de simular processos estocásticos, tendo sido utilizado por Neumann para simular o comportamento das partículas em diferentes materiais, permitindo verificar a viabilidade das reações atômicas, o nome do método foi  uma homenagem ao Cassino Monte Carlo, um complexo de jogos e entretenimento localizado no principado de Mônaco. A escolha do nome buscava evidenciar a estrita relação do método com a aleatoriedade e sua natureza altamente probabilística e imprevisível. Essa imprevisibilidade, entretanto, permite que o método seja suficientemente flexível para lidar com elevados graus de incertezas e relações pouco determinísticas.</p>
+        	</div>
+        	<div class="card">
+            	<h4>Exemplo: Cálculo da Área de um Lago</h4>
+            	<p>Um exemplo clássico de aplicação do método de Monte Carlo consiste na estimativa da área de um lago com formato irregular. Suponha que você foi incumbido da missão de calcular a área de um lago cuja forma é extremamente irregular. Para cumpri-la, você só dispõe de uma longa trena e dos conceitos básicos de geometria analítica. E, com o auxílio do método de Monte Carlo, isso é tudo que você precisa.</p>
+		<div class="imagecontainer">
 		<img src="img/cap1_montecarlo/img1.png" class = "infoimg" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Exemplo de lago de área irregular.</figcaption>
-	</div>
-            <p>Precisamos definir uma abordagem inicial para solucionar esse problema, o primeiro passo poderia ser a inscrição do lago em uma forma geométrica mais simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação ainda pode resultar em uma estimativa muito grosseira. Para conseguirmos uma aproximação mais precisa, devemos definir qual o percentual da área do Lago em relação à àrea do círculo.</p>
-        </div>
-        <div class="card">
-            <h4>Representação Geométrica</h4>
-            <p>O primeiro passo para calcular a área do lago utilizando o método de Monte Carlo consiste na representação do lago em um plano cartesiano, onde cada ponto do lago vai ser descrito por um par de coordenadas <code>(x, y)</code>. Essa abordagem visa facilitar a geração de pontos aleatórios para, posteriormente, verificar o percentual dos pontos aleatóriamente definiram percentem ao perimetro da representação do lago.</p>
-	<div class="imagecontainer">
+		</div>
+            	<p>Precisamos definir uma abordagem inicial para solucionar esse problema, o primeiro passo poderia ser a inscrição do lago em uma forma geométrica mais simples, como um círculo, cuja fórmula do cálculo é amplamente conhecida. No entanto, essa aproximação ainda pode resultar em uma estimativa muito grosseira. Para conseguirmos uma aproximação mais precisa, devemos definir qual o percentual da área do Lago em relação à àrea do círculo.</p>
+        	</div>
+        	<div class="card">
+            	<h4>Representação Geométrica</h4>
+            	<p>O primeiro passo para calcular a área do lago utilizando o método de Monte Carlo consiste na representação do lago em um plano cartesiano, onde cada ponto do lago vai ser descrito por um par de coordenadas <code>(x, y)</code>. Essa abordagem visa facilitar a geração de pontos aleatórios para, posteriormente, verificar o percentual dos pontos aleatóriamente definiram percentem ao perimetro da representação do lago.</p>
+		<div class="imagecontainer">
 		<img src="img/cap1_montecarlo/img2.png" class = "infoimg" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Ilha circunscrita em círculo.</figcaption>
 	</div>
@@ -64,79 +62,72 @@ $(document).ready(function(){
 		<img src="img/cap1_montecarlo/img3.png" class = "infoimg" alt="Logo" width=400 height= 400 style="max-width:50vw; max-height:50vh">
 	        <figcaption>Em vermelho estão os pontos aleatoriamente definidos.</figcaption>
 		</div>
-
-        </div>
-        <div class="card">
-            <h4>Cálculo da Área do Lago utilizando Monte Carlo</h4>
-            <p>Uma vez que os pontos foram gerados, podemos prosseguir com o cálculo, A fórmula para estimar a área do lago circunscrito em um círculo, utilizando o método de Monte Carlo, é:</p>
-            <p>
-                <code>Área do Lago (A_lago) ≈ Área do Círculo (A_circulo) × (N_dentro / N_total)</code>
-            </p>
-            <p>Onde:</p>
-            <ul>
-                <li><code>A_circulo</code>: Área do círculo que circunscreve o lago.</li>
-                <li><code>N_dentro</code>: Número de pontos aleatórios que caem dentro do lago.</li>
-                <li><code>N_total</code>: Número total de pontos aleatórios gerados dentro do retângulo.</li>
-            </ul>
-	    	<p>Supondo que o raio do círculo no qual a ilha está circunscrita seja de 4.7km, a função que descreve a área é <code>f(R)=πR²</code>, temos <code>f(R)=3,14*4,7²</code> de forma que a área do círculo é equivalente a  69,36Km²</p>
-		<p>Substituindo na fórmula <code>Área do Lago (A_lago) ≈ 69,36 × (574 / 1000)</code></p>
-		<p>De forma que a área estimada para a ilha é <code>39,81km²</code></p>
+        	</div>
+        	<div class="card">
+		<h4>Cálculo da Área do Lago utilizando Monte Carlo</h4>
+            		<p>Uma vez que os pontos foram gerados, podemos prosseguir com o cálculo, A fórmula para estimar a área do lago circunscrito em um círculo, utilizando o método de Monte Carlo, é:</p>
+            	<p>
+                	<code>Área do Lago (A_lago) ≈ Área do Círculo (A_circulo) × (N_dentro / N_total)</code>
+            	</p>
+            		<p>Onde:</p>
+            	<ul>
+                	<li><code>A_circulo</code>: Área do círculo que circunscreve o lago.</li>
+                	<li><code>N_dentro</code>: Número de pontos aleatórios que caem dentro do lago.</li>
+                	<li><code>N_total</code>: Número total de pontos aleatórios gerados dentro do retângulo.</li>
+            	</ul>
+	    		<p>Supondo que o raio do círculo no qual a ilha está circunscrita seja de 4.7km, a função que descreve a área é <code>f(R)=πR²</code>, temos <code>f(R)=3,14*4,7²</code> de forma que a área do círculo é equivalente a  69,36Km²</p>
+			<p>Substituindo na fórmula <code>Área do Lago (A_lago) ≈ 69,36 × (574 / 1000)</code></p>
+			<p>De forma que a área estimada para a ilha é <code>39,81km²</code></p>
         </div>
 	        <!-- Quiz Section -->
-        <div class="card">
-            <h4>Teste seus conhecimentos</h4>
-            <div class="input-container">
+        	<div class="card">
+            		<h4>Teste seus conhecimentos</h4>
+            		<div class="input-container">
 		    	<label for="name">Insira seu nome:</label>
 		    	<input  class="prettyInput" type="text" id="name" name="name" />
-		    </div>
-		<form id="quizForm">
-                <div>
-                    <p style="text-indent:0em;">1. Quem popularizou o Método de Monte Carlo?</p>
-                    <label><input type="radio" name="q1" value="a"> Albert Einstein</label><br>
-                    <label><input type="radio" name="q1" value="b"> John von Neumann</label><br>
-                    <label><input type="radio" name="q1" value="c"> Blaise Pascal</label><br>
-                    <label><input type="radio" name="q1" value="d"> Alan Turing</label>
-                </div>
-                <div>
-                    <p style="text-indent:0em;">2. Qual é a fórmula usada para calcular a área de um círculo?</p>
-                    <label><input type="radio" name="q2" value="a"> πR</label><br>
-                    <label><input type="radio" name="q2" value="b"> 2πR</label><br>
-                    <label><input type="radio" name="q2" value="c"> πR²</label><br>
-                    <label><input type="radio" name="q2" value="d"> R²/π</label>
-                </div>
-                <div>
-                    <p style="text-indent:0em;">3. Qual é a área estimada do lago no exemplo?</p>
-                    <label><input type="radio" name="q3" value="a"> 69,36km²</label><br>
-                    <label><input type="radio" name="q3" value="b"> 39,81km²</label><br>
-                    <label><input type="radio" name="q3" value="c"> 57,40km²</label><br>
-                    <label><input type="radio" name="q3" value="d"> 47,00km²</label>
-                </div>
-		<br>
-                <button class="sendbutton" type="button" onclick="checkAnswers()">Verificar Respostas</button>
-            </form>
+		    	</div>
+			<form id="quizForm">
+                	<div>
+                    	<p style="text-indent:0em;">1. Quem popularizou o Método de Monte Carlo?</p>
+                    	<label><input type="radio" name="q1" value="a"> Albert Einstein</label><br>
+                    	<label><input type="radio" name="q1" value="b"> John von Neumann</label><br>
+                    	<label><input type="radio" name="q1" value="c"> Blaise Pascal</label><br>
+                    	<label><input type="radio" name="q1" value="d"> Alan Turing</label>
+                	</div>
+                	<div>
+                    	<p style="text-indent:0em;">2. Qual é a fórmula usada para calcular a área de um círculo?</p>
+                    	<label><input type="radio" name="q2" value="a"> πR</label><br>
+                    	<label><input type="radio" name="q2" value="b"> 2πR</label><br>
+                    	<label><input type="radio" name="q2" value="c"> πR²</label><br>
+                    	<label><input type="radio" name="q2" value="d"> R²/π</label>
+                	</div>
+                	<div>
+                    	<p style="text-indent:0em;">3. Qual é a área estimada do lago no exemplo?</p>
+                   	<label><input type="radio" name="q3" value="a"> 69,36km²</label><br>
+                    	<label><input type="radio" name="q3" value="b"> 39,81km²</label><br>
+                    	<label><input type="radio" name="q3" value="c"> 57,40km²</label><br>
+                    	<label><input type="radio" name="q3" value="d"> 47,00km²</label>
+                	</div>
+			<br>
+                	<button class="sendbutton" type="button" onclick="checkAnswers()">Verificar Respostas</button>
+            	</form>
             <p id="quizResult"></p>
-        </div>
-<div class="card">
-     
-	<div>
-	<p>Se quiser entender melhor como o método funciona aqui está o link para o repositório com o <a href="https://github.com/mhsousa/monteCarlo/tree/main"> código</a></p>
-	</div>
-        
-</div>
-<div class="card" style="justify-content:center;">
-		<form
-	  action="https://formspree.io/f/mvgadkvl"
-	  method="POST"
-	>
-	  <label>
-	    Deseja receber notificação de quando publicarmos mais conteúdo? deixe seu email para que possamos informá-lo.
-	   
-	  </label>
-	  <!-- Campo Honeypot -->
+        	</div>
+		<div class="card">
 		<div>
-	 	  <button class="sendbutton" type="submit" id="envio" onclick="sendmail()" >Enviar</button>
+			<p>Se quiser entender melhor como o método funciona aqui está o link para o repositório com o <a href="https://github.com/mhsousa/monteCarlo/tree/main"> código</a></p>
+		</div>
+		</div>
+<div class="card" style="justify-content:center;">
+	<form
+	  action="https://formspree.io/f/mvgadkvl"
+	  method="POST">
+	  <label>Deseja receber notificação de quando publicarmos mais conteúdo? deixe seu email para que possamos informá-lo.</label>
+	  	<!-- Campo Honeypot -->
+		<div>
 		  <input type="email" name="email" class="prettyInput" required>
-		  <input class="prettyInput" type="text" name="_gotcha" style="display:none;">
+		  <input class="prettyInput" type="text" name="_gotcha" style="display:none;"> 
+		  <button class="sendbutton" type="submit" id="envio" onclick="sendmail()" >Enviar</button>
 		</div>
 	</form>
 	<p id="sendMail"></p>
