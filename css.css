@@ -380,5 +380,20 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+@keyframes swing {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .swinging {
+      display: inline-block;
+      animation: swing 2s infinite ease-in-out;
+      font-size: 24px;
+      color: #333;
+      margin: 50px;
+    }
 
     </style>
