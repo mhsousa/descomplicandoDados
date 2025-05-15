@@ -9,7 +9,10 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Bitter", serif;
+         font-optical-sizing: auto;
+         font-weight: 400;
+         font-style: normal;
             background: #090201;
             color: #e2e8f0;
             line-height: 1.7;
