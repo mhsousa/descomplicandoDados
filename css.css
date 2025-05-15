@@ -312,7 +312,7 @@
    body_ {
         margin: 0;
         font-family: 'Roboto Mono', monospace;
-        background-color: #f4f4f4;
+        background: #090201;
     }
 
     .header_a {
