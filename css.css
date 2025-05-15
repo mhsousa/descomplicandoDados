@@ -288,9 +288,7 @@
             position:relative;
             left:7%;
             align-items: center;
-            margin: 3rem auto;
             display: grid;
-            gap: 2rem;
         }
 .card {
             background: rgba(255, 255, 255, 0.05);
