@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconoCode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="css.css">
+	
+<div id="loading-spinner">
+        <div class="spinner"></div>
+</div>
+	
+<div id="header"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript"> 
+	function showSpinner() {
+                $('#loading-spinner').fadeIn();
+            }
+
+            // Esconde o spinner
+        function hideSpinner() {
+                $('#loading-spinner').fadeOut();
+            }
+showSpinner();
+$(document).ready(function(){
+	setTimeout(function(){
+		$("#header").load("header.html");
+		setTimeout(() => {console.log("Após 2 segundos");}, 20);
+		hideSpinner()},2000)})
+</script>
+<body>
+<div class="container">
+        <div class="card">
+          </div></div>
+</body>
+
+    </footer>
+</body>
+
+   
+   </html>
