@@ -144,7 +144,10 @@
             background: rgba(0, 0, 0, 0.2);
             padding: 0.3rem 0.6rem;
             border-radius: 8px;
-            font-family: 'Fira Code', monospace;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
             color: #f472b6;
             font-size: 0.95rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -206,11 +209,10 @@
             font-weight: bold;
         }
         #header-nav {
-         font-family: Arial, sans-serif;
-         font-optical-sizing: auto;
-         font-weight: 400;
-         font-style: normal;
-
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
             position:relative;
             top:-5px;
             height:6px;
