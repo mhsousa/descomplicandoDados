@@ -31,3 +31,27 @@
             <a href="http://www.econocode.com.br">Método de Monte Carlo</a>
         </div>
     </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const text = "sudo apt-get install artificial-intelligence-tools";
+    const typedTextElement = document.querySelector('.typed-text');
+
+    if (!typedTextElement) {
+      console.error("Elemento com a classe '.typed-text' não foi encontrado.");
+      return;
+    }
+
+    let i = 0;
+
+    function typeEffect() {
+      if (i < text.length) {
+        typedTextElement.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100); // Velocidade de digitação
+      }
+    }
+
+    typeEffect();
+  });
+</script>
+</script>
