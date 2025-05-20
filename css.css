@@ -255,8 +255,8 @@
     border-radius: 8px; /* Cantos arredondados */
     outline: none; /* Remove o contorno padrão */
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animações */
-}  .chapter-selector {
-            background: #fff;
+} 
+.chapter-selector {
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 20px;
