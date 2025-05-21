@@ -35,10 +35,36 @@ $(document).ready(function(){
 		setTimeout(() => {console.log("Após 2 segundos");}, 20);
 		hideSpinner()},2000)})
 </script>
-<body>
-
+<body class="bg-gray-100 font-sans">
+    <section class="max-w-4xl mx-auto p-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Sobre Nós</h1>
+            <p class="text-center text-gray-600 mb-8">
+                Somos uma equipe apaixonada por tecnologia, inovação e criatividade. Conheça nossos autores:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Autor 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-4 text-center">
+                    <img class="w-24 h-24 mx-auto rounded-full mb-4" src="https://via.placeholder.com/150" alt="Autor 1">
+                    <h2 class="text-xl font-semibold text-gray-800">Autor 1</h2>
+                    <p class="text-gray-600 text-sm">Especialista em Desenvolvimento Web</p>
+                </div>
+                <!-- Autor 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-4 text-center">
+                    <img class="w-24 h-24 mx-auto rounded-full mb-4" src="https://via.placeholder.com/150" alt="Autor 2">
+                    <h2 class="text-xl font-semibold text-gray-800">Autor 2</h2>
+                    <p class="text-gray-600 text-sm">Engenheiro de Dados e IA</p>
+                </div>
+                <!-- Autor 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-4 text-center">
+                    <img class="w-24 h-24 mx-auto rounded-full mb-4" src="https://via.placeholder.com/150" alt="Autor 3">
+                    <h2 class="text-xl font-semibold text-gray-800">Autor 3</h2>
+                    <p class="text-gray-600 text-sm">Designer e Criador de Conteúdo</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
-  
    
    </html>
