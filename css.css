@@ -282,6 +282,9 @@
         .chapter {
             display: flex;
             align-items: center;
+            position:relative;
+            left:-30px;
+            width:115%;
             background: #fff;
             padding: 15px;
             border-radius: 8px;
