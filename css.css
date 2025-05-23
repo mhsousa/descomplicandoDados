@@ -280,7 +280,7 @@
         .chapter {
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: #fff;
             padding: 15px;
             border-radius: 8px;
             font-size: 1rem;
