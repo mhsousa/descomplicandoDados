@@ -276,7 +276,9 @@
             flex-direction: column;
             gap: 10px;
         }
-
+        .chapter-title{
+               color:#000000;
+        }
         .chapter {
             display: flex;
             align-items: center;
